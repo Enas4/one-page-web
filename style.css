@@ -1,0 +1,152 @@
+*{
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* header starts here */
+
+header{
+    border:2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(207, 216, 228);
+    color: darkblue;
+}
+header ul{
+    display: flex;
+    margin: 0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+header a{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: rgb(240, 240, 240);
+}
+header a:hover{
+    background-color: lightsteelblue;
+}
+/* header ends here */
+
+ /* center page starts here  */
+
+ .center-page{
+    display: flex;
+    border:2px solid green;
+    background-color: lightyellow;
+}
+/* .center-page p{
+    text-align:left;
+    line-height: 1.5em;
+} */
+ .center-page .aside-div{
+     border: 2px solid rgb(128, 0, 6);
+     padding: 10px;
+     background-color: lightyellow;
+ }
+ .center-page .aside-div ul li{
+     border-bottom: 1px solid grey;
+     list-style-type: none;
+     margin: 10px;
+     padding: 5px;
+ }
+ .center-page .aside-div ul li:last-child{
+    border-bottom:none;
+ }
+ .center-page a{
+     color: darkblue;
+ }
+
+.center-page .right-side .services{
+    display: flex;
+    border: 2px solid pink;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.center-page .right-side{
+    padding: 20px;
+    background-color: rgb(252, 252, 221);
+}
+.center-page .right-side h2, .right-side h3{
+    color: darkblue;
+}
+.center-page .right-side .services .boxes{
+     display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    width:32%;
+    justify-content: space-between;
+    background-color: rgb(230, 240, 250);
+}
+.center-page .right-side .services .boxes div img{
+    width:100%;
+}
+.center-page .right-side .services .boxes div h3,p{
+    padding-left: 10px;
+    align-content: left;
+}
+
+.right-side .services div a{
+    background-color: rgb(211, 219, 228) ;
+    padding:5px 10px;
+    float: left;
+    margin:0px 0px 10px 10px;
+}
+.right-side .services .boxes:hover{
+    background-color: rgb(245, 248, 250);
+
+}
+
+/* center page ends here  */
+
+/* footer starts here */
+  footer{
+      text-align: center;
+    background-color: rgb(207, 216, 228);
+  }
+  footer h2 {
+      margin:0px;
+      padding:10px;
+      color: darkblue;
+  }
+/* footer ends here */
+
+
+@media screen and (max-width:600px){
+    .center-page{
+        display: block;
+    }
+    .center-page .aside-div ul li{
+        text-align: center;
+    }
+}
+@media screen and (max-width:780px){
+    .center-page .right-side .services .boxes {
+        width:100%;
+        margin-bottom: 10px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+       padding: 10px;
+    }
+    header div{
+        order: -1;
+        margin:0px
+    }
+    header ul{
+        margin: 20px;
+    }
+    .center-page .right-side .services .boxes div h3, p {
+        padding: 0px;
+        align-content: justify;
+    }
+}
