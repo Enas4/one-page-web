@@ -1,10 +1,10 @@
 *{
-    padding:0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
-    margin: 0;
+    margin: 0px;
     padding:0px;
     box-sizing: border-box;
 }
@@ -12,7 +12,6 @@ body{
 /* header starts here */
 
 header{
-    border:2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,15 +39,10 @@ header a:hover{
 
  .center-page{
     display: flex;
-    border:2px solid green;
     background-color: lightyellow;
 }
-/* .center-page p{
-    text-align:left;
-    line-height: 1.5em;
-} */
  .center-page .aside-div{
-     border: 2px solid rgb(128, 0, 6);
+     border-right: 1px solid lightgrey;
      padding: 10px;
      background-color: lightyellow;
  }
@@ -64,10 +58,8 @@ header a:hover{
  .center-page a{
      color: darkblue;
  }
-
 .center-page .right-side .services{
     display: flex;
-    border: 2px solid pink;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -75,13 +67,13 @@ header a:hover{
     padding: 20px;
     background-color: rgb(252, 252, 221);
 }
-.center-page .right-side h2, .right-side h3{
+.center-page .right-side h2,h3{
     color: darkblue;
 }
 .center-page .right-side .services .boxes{
      display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    border: 1px solid lightgrey;
     width:32%;
     justify-content: space-between;
     background-color: rgb(230, 240, 250);
@@ -89,7 +81,7 @@ header a:hover{
 .center-page .right-side .services .boxes div img{
     width:100%;
 }
-.center-page .right-side .services .boxes div h3,p{
+.center-page .right-side .services .boxes h3,p{
     padding-left: 10px;
     align-content: left;
 }
@@ -145,8 +137,5 @@ header a:hover{
     header ul{
         margin: 20px;
     }
-    .center-page .right-side .services .boxes div h3, p {
-        padding: 0px;
-        align-content: justify;
-    }
+    
 }
